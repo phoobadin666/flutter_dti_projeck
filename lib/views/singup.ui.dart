@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dti_projeck/views/login.ui.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Signupui extends StatefulWidget {
@@ -28,7 +29,9 @@ class _SignupuiState extends State<Signupui> {
                 Align(
                   alignment: Alignment.centerLeft,
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
                     child: Icon(
                       Icons.arrow_back_ios,
                       color: Colors.black,
@@ -94,7 +97,7 @@ class _SignupuiState extends State<Signupui> {
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
                     prefixIcon: Icon(
-                      FontAwesomeIcons.phone,
+                      FontAwesomeIcons.hashtag,
                     ),
                     hintText: 'Phone No',
                   ),
@@ -190,7 +193,14 @@ class _SignupuiState extends State<Signupui> {
                       width: 10,
                     ),
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Loginui(),
+                          ),
+                        );
+                      },
                       child: Text(
                         'LOGIN',
                         style: TextStyle(

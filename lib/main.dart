@@ -22,7 +22,7 @@ class _FlutterdtiprojeckState extends State<Flutterdtiprojeck> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Signupui(),
+      home: Welcomeui(),
       theme: ThemeData(
         textTheme: GoogleFonts.kanitTextTheme(
           Theme.of(context).textTheme,
